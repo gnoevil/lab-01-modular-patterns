@@ -1,18 +1,18 @@
 'use strict';
 
+const chai = require('chai');
 const greet = require('../lib/greet.js');
-const assert = require('chai').assert;
+const expect = chai.expect;
 
-describe('greet module', function(){
-  describe('#helloFriend', function() {
-    it('should return Hello friend, your name is: gnoevil', function() {
-      var result = greet.helloFriend('gnoevil');
-      assert.isTrue(result === 'Hello friend, your name is: gnoevil', 'not equal to Hello friend, your name is: gnoevil');
+describe('testing greet module', function(){
+  describe('valid inputs', function() {
+    it('should return "Hello friend, your name is: gnoevil"', function() {
+      expect(greet.helloFriend('gnoevil')).to.equal('Hello friend, your name is: gnoevil');
     });
+  });
+  describe('invalid inputs', function(){
     it('should throw a missing name error', function() {
-      assert.throws(function() {
-        greet.helloFriend();
-      }, 'error not thrown');
+      expect(greet.helloFriend).to.throw(Error);
     });
   });
 });
