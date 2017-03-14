@@ -1,24 +1,9 @@
-401 JS -- Class 01 Lab modular patterns
-===
+### Lab 01 Modular Patterns
+- First assignment done in Node with testing in Mocha & Chai
+- The greet.js module exports the greet function which takes a single string parameter and concatenates it with "Hello, " and returns it, or it returns null if the input is not a string.
+- The arithmetic.js module exports an add function and a subtract function. Each takes two number parameters, and if any params of a function have invalid types that function will throw an error.
 
-## Resources  
-* [Node assert docs](https://nodejs.org/dist/latest-v4.x/docs/api/assert.html)
-* [Mocha docs](http://mochajs.org/#getting-started)
+### Lab 02 Basic Tools
+- The primitive data types of JavaScript (number, string, boolean) are pass-by-value; each new assignment takes its own spot in memory.
 
-#### Feature Tasks  
-* CREATED a nodejs module named greet.js that exports a single function
- * The greet function should HAS a single parameter name that should expect a string
- * The greet function DOES return the input name concatenated with "Hello, "
- * The greet function DOES return null if the input is not a string
-* CREATED a nodejs module named arithmetic
- * The arithmetic.js module DOES have `add` and `sub` methods
- * `add` DOES have to params that should expect a number, it should return the sum of the to numbers
- * `sub` DOES have to params that should expect a number, it should return the first argument minus the second argument
- * decide on an expected behavior for non number inputs
-
-#### Testing  
-* TEST that expects the greet module to return "Hello, world!" when invoked with "world!"
-* TEST that expects the greet module to return null when you use non string values
-* TEST for the `add` and `subtract` methods on the arithmetic module
- * TEST that ensures the functions work as you expect with number inputs
- * TEST that ensures the functions work as expected with non number inputs
+- Objects, which is the data type of everything else, are pass-by-reference; a new assignment that references a preexisting object in memory simply 'points' to that same spot in memory.
