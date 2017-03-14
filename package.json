@@ -8,7 +8,7 @@
   },
   "scripts": {
     "lint": "./node_modules/eslint/bin/eslint.js .",
-    "test": "mocha"
+    "test": "./node_modules/mocha/bin/mocha.js"
   },
   "repository": {
     "type": "git",
